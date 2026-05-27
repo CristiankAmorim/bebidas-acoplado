@@ -1,9 +1,9 @@
 package org.example.main;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-import org.example.main.bebidas.Cafe;
-import org.example.main.bebidas.Cha;
-import org.example.main.bebidas.ChocolateQuente;
-import org.example.main.bebidas.Suco;
+import org.example.main.bebidas.*;
 import org.example.main.bebidas.enums.Ingrediente;
 
 public class Main {
@@ -72,24 +72,54 @@ public class Main {
                     }
                     break;
 
-        ChocolateQuente chocolate = new ChocolateQuente();
-        chocolate.adicionarIngrediente(Ingrediente.LEITE);
-        chocolate.adicionarIngrediente(Ingrediente.ACUCAR);
-        chocolate.adicionarIngrediente(Ingrediente.CANELA);
-        chocolate.preparar();
+                case 2:
+                    System.out.println("Chá");
+                    Cha cha = new Cha();
+                    cha.adicionarIngredientesAoEstoque(Ingrediente.AGUA);
+                    cha.adicionarIngredientesAoEstoque(Ingrediente.SACHE);
+                    cha.adicionarIngredientesAoEstoque(Ingrediente.ACUCAR);
+                    cha.adicionarIngredientesAoEstoque(Ingrediente.CANELA);
+                    try {
+                        cha.preparar();
+                    } catch (RuntimeException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
 
+                case 3:
+                    System.out.println("Chocolate Quente");
+                    ChocolateQuente chocolate = new ChocolateQuente();
+                    chocolate.adicionarIngredientesAoEstoque(Ingrediente.LEITE);
+                    chocolate.adicionarIngredientesAoEstoque(Ingrediente.ACUCAR);
+                    chocolate.adicionarIngredientesAoEstoque(Ingrediente.CHOCOLATE_EM_PO);
+                    try {
+                        chocolate.preparar();
+                    } catch (RuntimeException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
 
-        Suco suco = new Suco();
-        suco.adicionarIngrediente(Ingrediente.AGUA);
-        suco.adicionarIngrediente(Ingrediente.LARANJA);
-        suco.adicionarIngrediente(Ingrediente.ACUCAR);
-        suco.preparar();
+                case 4:
+                    System.out.println("Suco.");
+                    Suco suco = new Suco();
+                    suco.adicionarIngredientesAoEstoque(Ingrediente.AGUA);
+                    suco.adicionarIngredientesAoEstoque(Ingrediente.LARANJA);
+                    suco.adicionarIngredientesAoEstoque(Ingrediente.ACUCAR);
+                    try {
+                        suco.preparar();
+                    } catch (RuntimeException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
 
-        Cha cha = new Cha();
-        cha.adicionarIngrediente(Ingrediente.AGUA);
-        cha.adicionarIngrediente(Ingrediente.SACHE);
-        cha.adicionarIngrediente(Ingrediente.ACUCAR);
-        cha.adicionarIngrediente(Ingrediente.CANELA);
-        cha.preparar();
+                case 5:
+                    System.out.println("Saindo...");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida.");
+            }
+        }while(opcao != 5);*/
+        //sc.close();
     }
 }
