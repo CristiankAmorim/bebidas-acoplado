@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * @Retention(RUNTIME)  → mantida no bytecode e carregada em execução,
  *  *                     permitindo que a Reflexão a leia via getAnnotation()
  */
-@Target(ElementType.FIELD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface IngredienteObrigatorio {
     String descricao(); // nome do ingrediente
