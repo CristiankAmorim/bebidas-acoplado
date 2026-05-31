@@ -1,12 +1,16 @@
 package org.example.main.bebidas;
 
+import org.example.main.anotacoes.IngredienteObrigatorio;
 import org.example.main.bebidas.enums.Ingrediente;
 
-import java.util.ArrayList;
-import java.util.List;
-
+/**
+ * Subclasse de Bebida
+ * Marca o ingrediente sachê como obrigatório para o preparo.
+ */
+@IngredienteObrigatorio(ingrediente = Ingrediente.SACHE)
 public class Cha extends Bebida {
 
+    //Define os passos específicos da bebida chá.
     @Override
     protected void prepararEspecifico() {
         System.out.println("Colocando o sachê na água");

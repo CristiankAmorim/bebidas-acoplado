@@ -1,5 +1,6 @@
 package org.example.main.bebidas.enums;
 
+//Possíveis ingridentes a serem usados numa bebida.
 public enum Ingrediente {
     AGUA("Água"),
     PO_DE_CAFE("Pó de café"),
@@ -15,15 +16,22 @@ public enum Ingrediente {
     SACHE("Sachê");
 
     private final String descricao;
+
     Ingrediente (String descricao){
         this.descricao = descricao;
     }
     public String getDescricao(){
         return descricao;
     }
+
+    public String getDescricao(Object ingrediente) {
+        return this.descricao;
+    }
     @Override
     public String toString(){
         return descricao;
     }
+
+
 
 }
