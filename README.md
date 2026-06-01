@@ -278,7 +278,9 @@ Este projeto é fornecido como um exemplo educacional.
 
 ## 👤 Autor
 
-Cristian K Amorim
+-Cristian K Amorim
+-Isaac Nascimento
+-Pedro H Oliveira Souza
 
 ## 🤝 Contribuições
 
