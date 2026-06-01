@@ -454,9 +454,9 @@ Este é um projeto educacional. Sinta-se livre para usar, modificar e distribuir
 
 ## Autor
 
-Cristian K Amorim
-Isaac Nascimento
-Pedro H Oliveira Souza
+-Cristian K Amorim
+-Isaac Nascimento
+-Pedro H Oliveira Souza
 
 ---
 
