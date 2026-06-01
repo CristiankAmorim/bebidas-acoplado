@@ -27,8 +27,8 @@ public class Main {
 
         ChocolateQuente chocolate = new ChocolateQuente();
         chocolate.adicionarIngredientesAoEstoque(Ingrediente.LEITE);
-        chocolate.adicionarIngredientesAoEstoque(Ingrediente.ACUCAR);
         chocolate.adicionarIngredientesAoEstoque(Ingrediente.CHOCOLATE_EM_PO);
+        chocolate.adicionarIngredientesAoEstoque(Ingrediente.ACUCAR);
         bebidas.add(chocolate);
 
         Suco suco = new Suco();
