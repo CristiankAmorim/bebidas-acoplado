@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Anotação para armazenar um array de ingredientes marcados como obrigatórios paa preparo da bebida.
+ * Anotação para armazenar um array de ingredientes marcados como obrigatórios para preparo da bebida.
  *
  * @Target(TYPE) indica que só pode ser usada em classes.
  * @Retention(RUNTIME) indica que a anotação é carregada em tempo de execução, permitindo

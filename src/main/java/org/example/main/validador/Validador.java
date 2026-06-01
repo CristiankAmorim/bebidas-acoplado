@@ -14,7 +14,7 @@ public class Validador {
 
     /**
      * Valida se a classe que está anotada com @IngredienteObrigatorio corretamente preenchido
-     * (não nulo_ no objeto recebido.
+     * (não nulo_ no objeto recebido).
      * @param objeto qualquer instância de Bebida ou subclasses
      * @return nome do(s) ingrediente(s) obrigatório(s) que não foi adicinado.
      */

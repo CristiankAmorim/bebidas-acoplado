@@ -12,8 +12,6 @@ public class Main {
 
         List<Bebida> bebidas = new ArrayList<>();
 
-        Validador validador = new Validador();
-
         Cafe cafe = new Cafe();
         cafe.adicionarIngredientesAoEstoque(Ingrediente.AGUA);
         cafe.adicionarIngredientesAoEstoque(Ingrediente.PO_DE_CAFE);

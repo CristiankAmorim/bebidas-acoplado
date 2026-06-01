@@ -19,5 +19,5 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface IngredienteObrigatorio {
     Ingrediente ingrediente();
-    String mensagemDeErro() default "Ingrediente obrigatótrio não disponível";
+    String mensagemDeErro() default "Ingrediente obrigatótrio indisponível";
 }
