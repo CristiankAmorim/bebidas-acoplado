@@ -1,5 +1,5 @@
 package org.example.main.bebidas.enums;
-
+//Definindo o conjunto fixo de constantes nomeadas.
 public enum Ingrediente {
     AGUA("Água"),
     PO_DE_CAFE("Pó de café"),
@@ -21,6 +21,7 @@ public enum Ingrediente {
     public String getDescricao(){
         return descricao;
     }
+    // Objeto sobreescrito para o retorno da descrição legível.
     @Override
     public String toString(){
         return descricao;
